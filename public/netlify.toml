@@ -1,4 +1,0 @@
-  [[redirects]]  
-  from = "/*"  
-  to = "/../views/NotFoundView.vue"  
-  status = 200
