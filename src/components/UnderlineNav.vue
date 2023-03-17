@@ -122,14 +122,14 @@ position: relative;
 }
 }
 
-@media (max-width: 958px) and (min-width: 768px) {
+@media (max-width: 958px) and (min-width: 859px) {
 .underline-content{
     padding-right: 280px;
     padding-left: 280px;
 }
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 856px) {
 .underline{
   margin-top: -3px;
   overflow-x: auto;
@@ -141,7 +141,11 @@ position: relative;
 }
 
 .repo::after {
-  bottom: -3px;
+ display: none;
+}
+
+.repo .text h4{
+    font-weight: 700;
 }
 }
 </style>

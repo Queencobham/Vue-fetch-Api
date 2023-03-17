@@ -1,7 +1,7 @@
 <template>
   <NavBar />
   <div className="desktop">
-    <!-- <UnderlineNav /> -->
+    <UnderlineNav />
    <div class="profile-repo">
     <ProfileLeft />
     <RepoRight />
@@ -63,13 +63,13 @@ body{
 }
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 859px) {
 .mobile{
   display: none;
 }
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 856px) {
  .desktop{
   display: none
  }

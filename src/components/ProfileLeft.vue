@@ -203,13 +203,13 @@
 }
 }
 
-@media (max-width: 958px) and (min-width: 768px) {
+@media (max-width: 958px) and (min-width: 859px) {
 .img-name img{
   width: 100%;
 }
 }
 
-@media (max-width: 998px) and (min-width: 768px) {
+@media (max-width: 998px) and (min-width: 859px) {
 .profile-btn button{
    padding: 7px 80px;
 }
@@ -219,26 +219,24 @@
 }
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 856px) {
 .img-name {
-   margin-top: 1px;
+   margin-top: 25px;
 }
 
 .img-name{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
+   display: flex;
    align-items: center;
-}
-
-.name{
-  line-break: auto;
-   padding: 0;
-   margin: 0;
+   gap: 0.5em;
 }
 
 .img-name img{
-  width: 40%;
-  height: auto;
+  width: 20%;
+  height: 20%;
+}
+
+.profile-name{
+   margin-top: -15px;
 }
 
 .profile-name h4{
@@ -273,5 +271,10 @@
 }
 }
 
+@media (max-width: 766px) and (min-width: 462px) {
+.img-name {
+   margin-top: 40px;
+}
+}
 </style>
 

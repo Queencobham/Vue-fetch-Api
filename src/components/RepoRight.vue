@@ -3,7 +3,7 @@
     <div v-for="repo in pageOfRepos" :key="repo.id" class="repo-border-bottom py">
       <div class="repo-lists">
         <div class="name-visibility">
-        <router-link :to="{ name: 'RepoDetails', params: { name: repo.name } }">
+        <router-link :to="{ name: 'RepoDetails', params: { name: repo.name } }" class="name-link">
            <p class="name">{{ repo.name }}</p>
         </router-link>
         <span class="visibility">{{ repo.visibility }}</span>
@@ -133,6 +133,16 @@ export default {
   font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
+  text-decoration: none;
+}
+
+.name-link{
+  text-decoration: none;
+}
+
+.name-link:hover{
+text-decoration: underline;
+text-decoration-color: #0969da;
 }
 
 .visibility{
