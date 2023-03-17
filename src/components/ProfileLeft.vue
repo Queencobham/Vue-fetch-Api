@@ -1,9 +1,7 @@
 <template>
    <div class="profile">
       <div class="img-name">
-         <div class="img">
-           <img src="../assets/hero.jpg" alt="my-photo">
-         </div>
+         <img src="../assets/hero.jpg" alt="my-photo">
          <div class="profile-name">
            <h1>queeneth cobham</h1>
            <h4>queencobham</h4>
@@ -24,7 +22,7 @@
         <a href="#"><span class="one">1</span> following</a>
       </div>
       <div class="profile-details">
-            <li>
+            <li class="location">
                <svg class="octicon octicon-location" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.07l3.536-3.534a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z"></path></svg>
                <span>Nigeria</span>
             </li>
@@ -55,7 +53,11 @@
 </template>
 
 <style scoped>
-.img-name .img img{
+.img-name img{
+   margin-top: -30px;
+}
+
+.img-name img{
   border-radius: 50%;
   border: 1px solid #d0d7de;
   box-shadow: 0 0 0 1px rgba(27, 31, 36, 0.15);
@@ -195,6 +197,81 @@
    font-size: 12px;
 }
 
+@media (max-width: 1003px) and (min-width: 957px) {
+.img-name img{
+  width: 100%;
+}
+}
+
+@media (max-width: 958px) and (min-width: 768px) {
+.img-name img{
+  width: 100%;
+}
+}
+
+@media (max-width: 998px) and (min-width: 768px) {
+.profile-btn button{
+   padding: 7px 80px;
+}
+
+.profile-border{
+   width: 240px;
+}
+}
+
+@media only screen and (max-width: 766px) {
+.img-name {
+   margin-top: 1px;
+}
+
+.img-name{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+}
+
+.name{
+  line-break: auto;
+   padding: 0;
+   margin: 0;
+}
+
+.img-name img{
+  width: 40%;
+  height: auto;
+}
+
+.profile-name h4{
+   font-size: 20px;
+}
+
+.profile-title p{
+   margin-top: 10px;
+}
+
+.profile-btn button{
+   width: 100%;
+   padding: 7px 0;
+}
+
+.profile-border{
+   width: 100%;
+   margin-top: 50px;
+}
+
+.profile-follow{
+   position: absolute;
+   margin-top: 60px;
+}
+
+.profile-details{
+   margin-top: 10px;
+}
+
+.profile-details .location{
+   display: none;
+}
+}
 
 </style>
 

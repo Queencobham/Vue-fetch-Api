@@ -63,7 +63,9 @@
 
 .underline-content{
     display: flex;
-    justify-content: center;
+    padding-right: 410px;
+    padding-left: 410px;
+    /* justify-content: center; */
     gap: 1.3em;
 }
 
@@ -111,5 +113,35 @@ a:hover{
 
 .repo{
 position: relative;  
+}
+
+@media (max-width: 1003px) and (min-width: 957px) {
+.underline-content{
+    padding-right: 305px;
+    padding-left: 305px;
+}
+}
+
+@media (max-width: 958px) and (min-width: 768px) {
+.underline-content{
+    padding-right: 280px;
+    padding-left: 280px;
+}
+}
+
+@media only screen and (max-width: 766px) {
+.underline{
+  margin-top: -3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.underline-content{
+    padding-left: 40px;
+}
+
+.repo::after {
+  bottom: -3px;
+}
 }
 </style>

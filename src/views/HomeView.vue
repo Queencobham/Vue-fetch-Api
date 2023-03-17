@@ -1,8 +1,15 @@
 <template>
   <NavBar />
-  <UnderlineNav />
-  <div class="profile-repo">
-    <!-- <ProfileLeft /> -->
+  <div className="desktop">
+    <UnderlineNav />
+   <div class="profile-repo">
+    <ProfileLeft />
+    <RepoRight />
+   </div>
+  </div>
+  <div className="mobile">
+    <ProfileLeft />
+    <UnderlineNav />
     <RepoRight />
   </div>
 </template>
@@ -10,7 +17,7 @@
 <script>
 import NavBar from '../components/NavBar.vue'
 import UnderlineNav from '../components/UnderlineNav.vue'
-// import ProfileLeft from './components/ProfileLeft.vue'
+import ProfileLeft from '../components/ProfileLeft.vue'
 import RepoRight from '../components/RepoRight.vue'
 
 export default {
@@ -18,6 +25,7 @@ export default {
   components: {
     NavBar,
     UnderlineNav,
+    ProfileLeft,
     RepoRight
   }
 }
@@ -39,12 +47,37 @@ body{
   margin-left: 70px;
   gap: 30px;
 }
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+
+
+@media (max-width: 1003px) and (min-width: 957px) {
+.profile-repo{
+  margin-right: 40px;
+  margin-left: 40px;
+}
+}
+
+@media (max-width: 958px) and (min-width: 768px) {
+.profile-repo{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+}
+
+@media only screen and (min-width: 767px) {
+.mobile{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 766px) {
+ .desktop{
+  display: none
+ }
+ .mobile{
+  padding-right: 20px;
+  padding-left: 20px;
+ }
+}
+
+
 </style>
