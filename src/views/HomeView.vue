@@ -1,7 +1,7 @@
 <template>
   <NavBar />
   <div className="desktop">
-    <UnderlineNav />
+    <!-- <UnderlineNav /> -->
    <div class="profile-repo">
     <ProfileLeft />
     <RepoRight />
