@@ -2,7 +2,7 @@
 <div class="main" v-if="!isLoading">
   <router-link to="/" class="repo-link">Go Back</router-link>
   <div class="repo-heading">
-    <h2>{{ repo.name }} details</h2>
+    <h2>{{ repo.name }} Details</h2>
   </div>
   <div class="repo-details">
     <div class="repo-description">
@@ -12,7 +12,27 @@
     <div class="details-flex">
       <p>Created at:</p> 
       <span>
+        {{ new Date(repo.created_at).toLocaleString('default', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+        })}}
+      </span>
+    </div>
+    <div class="details-flex">
+      <p>Updated at:</p> 
+      <span>
         {{ new Date(repo.updated_at).toLocaleString('default', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+        })}}
+      </span>
+    </div>
+    <div class="details-flex">
+      <p>Pushed at:</p> 
+      <span>
+        {{ new Date(repo.pushed_at).toLocaleString('default', {
         month: 'short',
         day: 'numeric',
         year: 'numeric'
@@ -35,12 +55,6 @@
       <p>Stars:</p> 
       <span>
         {{ repo.stargazers_count }}
-      </span>
-    </div>
-    <div class="details-flex">
-      <p>Watchers:</p> 
-      <span>
-       {{ repo.watchers_count }}
       </span>
     </div>
     <div class="details-flex">
@@ -149,7 +163,7 @@ export default {
 }
 
 .view-more{
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 .view-more a{

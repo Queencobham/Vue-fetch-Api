@@ -19,6 +19,9 @@
                 </div>
                 <div class="text">
                     <h4>repositories</h4>
+                    <div class="count">
+                        <span>25</span>
+                    </div>
                 </div>
             </a>
             <a class="project">
@@ -114,6 +117,23 @@ a:hover{
 .repo{
 position: relative;  
 }
+
+.repo .text{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.repo .text span{
+ border: 1px solid rgba(0,0,0,0);
+ border-radius: 2em;
+ font-size: 12px;
+ font-weight: 500;
+ background-color: rgba(175,184,193,0.2);
+ color: #24292f;
+ padding: 0 6px;
+}
+
 
 @media (max-width: 1003px) and (min-width: 957px) {
 .underline-content{
