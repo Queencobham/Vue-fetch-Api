@@ -1,5 +1,8 @@
 # vue-github-api-project
 
+##Project URL
+https://my-vue-github-fetch-api.netlify.app/
+
 ## Project setup
 ```
 npm install
