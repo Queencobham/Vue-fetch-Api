@@ -23,7 +23,7 @@
 .page-text-top h1{
     margin-top: -0.3em;
     font-size: 13rem;
-    background-color: #0969da;
+    color: #0969da;
     letter-spacing: -.03em;
 }
 
