@@ -24,7 +24,6 @@
     margin-top: -0.3em;
     font-size: 13rem;
     background-color: #0969da;
-    background-clip: text;
     letter-spacing: -.03em;
 }
 
