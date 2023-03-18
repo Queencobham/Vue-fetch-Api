@@ -168,4 +168,12 @@ margin-top: -20px;
   margin-left: 20px;
   margin-top: 20px;
 }
+
+
+@media only screen and (max-width: 500px) {
+ .pagination ul li {
+  padding: 3px 10px;
+  margin-right: 10px;
+}
+}
 </style>
