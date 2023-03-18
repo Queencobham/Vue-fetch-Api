@@ -173,7 +173,7 @@ margin-top: -20px;
 @media only screen and (max-width: 500px) {
  .pagination ul li {
   padding: 3px 10px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 }
 </style>
