@@ -23,9 +23,7 @@
 .page-text-top h1{
     margin-top: -0.3em;
     font-size: 13rem;
-    background: linear-gradient(90deg,#b0f3f1,#ffcfdf);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-color: #0969da;
     background-clip: text;
     letter-spacing: -.03em;
 }
@@ -51,7 +49,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    background-color: #57a3c7;
+    background-color: #0969da;
     padding: 0.8em 2em;
     font-size: 1rem;
     font-weight: 700;
@@ -60,7 +58,7 @@
 
 .page-text-bottom a:hover{
     background-color: transparent;
-    border: 2px solid #57a3c7;
+    border: 2px solid #0969da;
     color: #24292f;
 }
 
