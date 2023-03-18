@@ -59,7 +59,7 @@ export default {
     },
   },
   mounted() {
-    fetch(`https://api.github.com/users/queencobham/repos?per_page=100`)
+    fetch(`https://api.github.com/users/queencobham/repos`)
       .then((res) => res.json())
       .then((data) => {
         this.repos = data;
